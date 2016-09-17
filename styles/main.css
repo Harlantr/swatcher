@@ -1,0 +1,52 @@
+.current-color-wrapper{
+	border:1px solid gray;
+	box-shadow: 0px 0px 15px #888888;
+	webkit-box-shadow: 0px 0px 15px #888888;
+	moz-box-shadow: 0px 0px 15px #888888;
+	text-align: center;
+	border-radius: 10px;
+	webkit-border-radius:10px;
+	moz-border-radius:10px;
+	border-collapse: collapse;
+}
+
+.current-color{
+	border-radius: 10px;
+	webkit-border-radius:10px;
+	moz-border-radius:10px;
+	border-collapse: collapse;
+	display:block;
+	padding: .5em;
+}
+
+.hex-code-header{
+	font-size: 4em;
+	color:#999;
+}
+
+.rgb-table{
+	margin:auto;
+	text-align: left;
+	color:#999;
+}
+	.rgb-table td{
+		padding-right: 10px;
+	}
+
+.alt-color{
+	height:5em;
+	left: 0;
+	right: 0;
+	position: absolute;
+}
+.alt-color-text{
+	color: black;
+	padding-top: 5em;
+	text-align: center;
+}
+
+.shade-tint-container{
+	display: inline-block;
+	padding: 1em 0 2em;
+	width: 100%;
+}
