@@ -25,7 +25,7 @@
     <div class="row-fluid">
         <div class="col-md-2 col-xs-2"><h3>Shades:</h3></div>
         <div ng-repeat="hex in shades track by $index" class="col-md-1 col-xs-1">
-            <a ng-href="#/color/{{hex}}">
+            <a ng-href="/color/{{hex}}">
                 <div class="alt-color" style="background-color: #{{hex}};"></div>
                 <div class="alt-color-text"><span class="hidden-xs hidden-sm">#{{hex}}</span></div>
             </a>
@@ -34,7 +34,7 @@
     <div class="row-fluid">
         <div class="col-md-2 col-xs-2"><h3>Tints:</h3></div>
         <div ng-repeat="hex in tints track by $index" class="col-md-1 col-xs-1">
-            <a ng-href="#/color/{{hex}}">
+            <a ng-href="/color/{{hex}}">
                 <div class="alt-color" style="background-color: #{{hex}};"></div>
                 <div class="alt-color-text"><span class="hidden-xs hidden-sm">#{{hex}}</span></div>
             </a>
@@ -46,13 +46,13 @@
     <div class="col-md-4 col-xs-4">
         <h4>Complementary Color</h4>
         <div class="col-md-6 col-xs-6">
-            <a ng-href="#/color/{{currentColor.hex}}">
+            <a ng-href="/color/{{currentColor.hex}}">
                 <div class="alt-color" style="background-color: #{{currentColor.hex}};"></div>
                 <div class="alt-color-text"><span class="hidden-xs hidden-sm">#{{currentColor.hex}}</span></div>
             </a>
         </div>
         <div class="col-md-6 col-xs-6">
-            <a ng-href="#/color/{{currentColor.complement}}">
+            <a ng-href="/color/{{currentColor.complement}}">
                 <div class="alt-color" style="background-color: #{{currentColor.complement}};"></div>
                 <div class="alt-color-text"><span class="hidden-xs hidden-sm">#{{currentColor.complement}}</span></div>
             </a>
@@ -61,7 +61,7 @@
     <div class="col-md-6 col-md-offset-2 col-xs-6 col-xs-offset-2">
         <h4>Color Triad</h4>
         <div ng-repeat="hex in currentColor.triad track by $index" class="col-md-4 col-xs-4">
-            <a ng-href="#/color/{{hex}}">
+            <a ng-href="/color/{{hex}}">
                 <div class="alt-color" style="background-color: #{{hex}};"></div>
                 <div class="alt-color-text"><span class="hidden-xs hidden-sm">#{{hex}}</span></div>
             </a>
@@ -73,7 +73,7 @@
     <div class="col-md-6 col-xs-6">
         <h4>Split Complement</h4>
         <div ng-repeat="hex in currentColor.splitComplement track by $index" class="col-md-4 col-xs-4">
-            <a ng-href="#/color/{{hex}}">
+            <a ng-href="/color/{{hex}}">
                 <div class="alt-color" style="background-color: #{{hex}};"></div>
                 <div class="alt-color-text"><span class="hidden-xs hidden-sm">#{{hex}}</span></div>
             </a>
@@ -82,7 +82,7 @@
     <div class="col-md-6 col-xs-6">
         <h4>Analogous Colors</h4>
         <div ng-repeat="hex in currentColor.analogous track by $index" class="col-md-4 col-xs-4">
-            <a ng-href="#/color/{{hex}}">
+            <a ng-href="/color/{{hex}}">
                 <div class="alt-color" style="background-color: #{{hex}};"></div>
                 <div class="alt-color-text"><span class="hidden-xs hidden-sm">#     {{hex}}</span></div>
             </a>

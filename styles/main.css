@@ -1,3 +1,18 @@
+.jumbo{
+	height: 5em;
+	line-height: 5em;
+	vertical-align: middle;
+	background: lightgray;
+}
+
+.mainAnchor{
+	font-size: large;
+	color: black;
+}
+	.mainAnchor:hover, .mainAnchor:visited{
+		color: black;
+	}
+
 .current-color-wrapper{
 	border:1px solid gray;
 	box-shadow: 0px 0px 15px #888888;
