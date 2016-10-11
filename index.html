@@ -28,9 +28,10 @@
                 </div>
             </div>
         </div>
-        <!-- <input type="text" value="000000" ng-model="txtColor" ng-change="newColor='#'+txtColor"> -->
-        <input type="color" name="colorPicker" ng-model="newColor" ng-change="redirectColor=newColor">
-        <div class="container" ng-view="" autoscroll="true"></div>
+        <div class="color-input">
+            <input type="color" name="colorPicker" ng-model="newColor" ng-change="redirectColor=newColor">
+        </div>
+        <div class="container" ng-view=""></div>
         <footer class="footer">
             <br><br><br><br><br><br><br>
         </footer>
