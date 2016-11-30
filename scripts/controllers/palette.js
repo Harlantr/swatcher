@@ -1,7 +1,8 @@
 'use strict';
 
 angular.module('swatcher')
-    .controller('paletteCtrl', function ($scope, $routeParams, $location) {
+    .controller('paletteCtrl', function ($scope) {
+
     	$scope.paletteBackgroundColor1 = {"background-color": "#eeeeee"}
     	$scope.paletteBackgroundColor2 = {"background-color": "#dddddd"}
     	$scope.paletteBackgroundColor3 = {"background-color": "#cccccc"}

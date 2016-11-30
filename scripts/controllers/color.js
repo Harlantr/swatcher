@@ -1,18 +1,18 @@
 'use strict';
 
 angular.module('swatcher')
-    .controller('colorCtrl', function ($scope, $routeParams, $location, $timeout) {
+    .controller('colorCtrl', function ($scope) {
 
         $scope.$watch('redirectColor', function(newVal, oldVal) {
             if(newVal !== oldVal){
                 var hex = newVal ? newVal : "#000000";
-                $location.path( "/color/" + hex.substring(1));
+                $scope.changeColor(hex);
             }            
         });
 
-        $scope.$on('$routeChangeSuccess', function(next, current) {
+        $scope.changeColor = function(hex){
             // Set new color
-            var color = tinycolor($routeParams.hex);
+            var color = tinycolor(hex);
 
             $scope.currentColor = {
                 'hex': color.toHex(),
@@ -64,5 +64,8 @@ angular.module('swatcher')
                 ar_tints.push(tmpColor.toHex());
             }
             $scope.tints = ar_tints;
-        });
+        }
+
+        // Reset to black on page load
+        $scope.changeColor("#000000");
 });

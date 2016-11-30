@@ -1,31 +1,33 @@
-<div class="palette-creator-wrapper">
-    <div class="row">
-        <div class="col-md-4">
-            <h4>Palette Name:</h4><input type="text" id="txtPaletteName"/>
-            <input type="button" class="btn btn-primary" id="btnSavePalette" value="Save Palette" title="Save Palette"/>
+<div style="text-align: center">
+    <div class="palette-creator-wrapper">
+        <div class="row">
+            <div class="col-md-2 col-md-offset-1 palette-color" ng-style="{'background-color':paletteColor1}"></div>
+            <div class="col-md-2 palette-color" ng-style="{'background-color':paletteColor2}"></div>
+            <div class="col-md-2 palette-color" ng-style="{'background-color':paletteColor3}"></div>
+            <div class="col-md-2 palette-color" ng-style="{'background-color':paletteColor4}"></div>
+            <div class="col-md-2 palette-color" ng-style="{'background-color':paletteColor5}"></div>
         </div>
-        <div class="col-md-1 palette-color" ng-style="{'background-color':paletteColor1}"></div>
-        <div class="col-md-1 palette-color" ng-style="{'background-color':paletteColor2}"></div>
-        <div class="col-md-1 palette-color" ng-style="{'background-color':paletteColor3}"></div>
-        <div class="col-md-1 palette-color" ng-style="{'background-color':paletteColor4}"></div>
-        <div class="col-md-1 palette-color" ng-style="{'background-color':paletteColor5}"></div>
-    </div>
-    <br/>
-    <div class="row">
-        <div class="col-md-1 col-md-offset-4">
-            <input type="color" ng-model="paletteColor1">
-        </div>
-        <div class="col-md-1">
-            <input type="color" ng-model="paletteColor2">
-        </div>
-        <div class="col-md-1">
-            <input type="color" ng-model="paletteColor3">
-        </div>
-        <div class="col-md-1">
-            <input type="color" ng-model="paletteColor4">
-        </div>
-        <div class="col-md-1">
-            <input type="color" ng-model="paletteColor5">
+        <div class="row">
+            <div class="col-md-2 col-md-offset-1">
+                <h4 ng-bind="paletteColor1"></h4>
+                <input type="color" ng-model="paletteColor1">
+            </div>
+            <div class="col-md-2">
+                <h4 ng-bind="paletteColor2"></h4>
+                <input type="color" ng-model="paletteColor2">
+            </div>
+            <div class="col-md-2">
+                <h4 ng-bind="paletteColor3"></h4>
+                <input type="color" ng-model="paletteColor3">
+            </div>
+            <div class="col-md-2">
+                <h4 ng-bind="paletteColor4"></h4>
+                <input type="color" ng-model="paletteColor4">
+            </div>
+            <div class="col-md-2">
+                <h4 ng-bind="paletteColor5"></h4>
+                <input type="color" ng-model="paletteColor5">
+            </div>
         </div>
     </div>
 </div>
